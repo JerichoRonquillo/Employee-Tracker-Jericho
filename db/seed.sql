@@ -1,23 +1,30 @@
-INSTERT INTO department(department_name)
-VALUES
-('management'),
-('Human Resources'),
-('Sales'),;
+USE employee_tracker;
 
-INSTERT INTO roles(title, salary, department_id)
+INSERT INTO department (name)
 VALUES
-('Sales Person', 1000, 3),
-('HR', 2032, 2),
-('Accountant', 234134, 3),
-('Managers',1423, 1),;
+  ('Sales'),
+  ('Engineering'),
+  ('Finance'),
+  ('Legal');
 
-INSERT INTO employees (first_name, last_name, role_id)
+INSERT INTO role (title, salary, department_id)
 VALUES
-('Jericho', 'Ronquillo', 1)
-('Ezekiel', 'Rivera', 3)
-('Reggie', 'Gonzaga', 3)
-('Cyrus', 'Bae Bae', 3)
-('Andrew', 'Campos', 2)
-('James', 'Cardenova', 2),;
+  ('Sales Lead', 100000, 1),
+  ('Salesperson', 80000, 1),
+  ('Lead Engineer', 150000, 2),
+  ('Software Engineer', 120000, 2),
+  ('Account Manager', 160000, 3),
+  ('Accountant', 125000, 3),
+  ('Legal Team Lead', 250000, 4),
+  ('Lawyer', 190000, 4);
 
-UPDATE `employe_db`.`employees` SET `manager_id` = '1' WHERE (`id` > '1');
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES
+  ('Jericho ', 'Ronquillo', 1, NULL),
+  ('Ezekiel ', 'Rivera', 2, 1),
+  ('Josh ', 'Rodriguez', 3, NULL),
+  ('Kevin ', 'Khoa', 4, 3),
+  ('Daniel ', 'Singh', 5, NULL),
+  ('Marucs ', 'Navarete', 6, 5),
+  ('John ', 'Cobb', 7, NULL),
+  ('Bob ', 'Allen', 8, 7);
