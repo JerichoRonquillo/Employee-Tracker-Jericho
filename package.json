@@ -1,30 +1,26 @@
 {
-  "name": "employee-management",
+  "name": "employeetracker",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A tool to manage a companies employees",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JMonRom/employee-management.git"
+    "url": "git+https://github.com/Revivedaniel/employeeTracker.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Revivedaniel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JMonRom/employee-management/issues"
+    "url": "https://github.com/Revivedaniel/employeeTracker/issues"
   },
-  "homepage": "https://github.com/JMonRom/employee-management#readme",
+  "homepage": "https://github.com/Revivedaniel/employeeTracker#readme",
   "dependencies": {
-    "asciiart-logo": "^0.2.6",
     "console.table": "^0.10.0",
     "dotenv": "^10.0.0",
-    "inquirer": "^8.2.0",
-    "mysql2": "^2.3.3",
-    "require": "^2.4.20",
-    "sequelize": "^6.11.0"
+    "inquirer": "^8.1.2",
+    "mysql2": "^2.3.0"
   }
 }
